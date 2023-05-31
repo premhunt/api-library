@@ -184,17 +184,18 @@ class Api implements LoggerAwareInterface
      */
     public function setBaseUrl($url)
     {
-        if (substr($url, -1) != '/') {
-            $url .= '/';
-        }
+	    if($url !== null){
+		    if (substr($url, -1) != '/') {
+			    $url .= '/';
+		    }
 
-        if (substr($url,-4,4) != 'api/') {
-            $url .= 'api/';
-        }
+		    if (substr($url,-4,4) != 'api/') {
+			    $url .= 'api/';
+		    }
+	    }
+	    $this->baseUrl = $url;
 
-        $this->baseUrl = $url;
-
-        return $this;
+	    return $this;
     }
 
     /**
