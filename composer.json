@@ -2,23 +2,23 @@
   "name": "premhunt/api-library",
   "license": "MIT",
   "type": "library",
-  "description": "Aritic API Connector Library",
+  "description": "Aritic API Connector Library ",
   "autoload": {
     "psr-4": {
       "Aritic\\": "lib/"
     }
   },
   "autoload-dev": {
-    "psr-4": {
+    "psr-4": { 
     }
   },
   "require": {
     "php": ">=5.3.7",
     "ext-curl": "*",
-    "ext-json": "*"
+    "ext-json": "*" 
   },
   "require-dev": {
     "phpunit/phpunit": "^5",
-    "raveren/kint": "~0.9"
+    "raveren/kint": "~1.0"
   }
 }
