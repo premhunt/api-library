@@ -3,7 +3,7 @@
   "license": "MIT",
   "type": "library",
   "description": "Aritic API Connector Library ",
-  "minimum-stability": "stable"
+  "minimum-stability": "stable",
   "autoload": {
     "psr-4": {
       "Aritic\\": "lib/"
